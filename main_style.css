@@ -1,0 +1,46 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@media (max-width: 768px) {
+.mobile-menu {
+display: none;
+}
+.mobile-menu.active {
+display: block;
+}
+}
+.hero-image {
+background-image: url('https://public.readdy.ai/ai/img_res/344f7d1ae4f88a2eef85ea463c4bf265.jpg');
+background-size: cover;
+background-position: center;
+}
+.floating {
+animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+0% { transform: translate(0,  0px); }
+50%  { transform: translate(0, 15px); }
+100%   { transform: translate(0, -0px); }
+}
+.shine-effect {
+position: relative;
+overflow: hidden;
+}
+.shine-effect::after {
+content: '';
+position: absolute;
+top: -50%;
+left: -50%;
+width: 200%;
+height: 200%;
+background: linear-gradient(
+to bottom right,
+rgba(255,255,255,0) 0%,
+rgba(255,255,255,0.1) 50%,
+rgba(255,255,255,0) 100%
+);
+transform: rotate(45deg);
+animation: shine 3s infinite;
+}
+@keyframes shine {
+0% {transform: translateX(-100%) rotate(45deg);}
+100% {transform: translateX(100%) rotate(45deg);}
+}
