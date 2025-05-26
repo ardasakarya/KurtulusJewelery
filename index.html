@@ -14,81 +14,80 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-
-
-
-
 </head>
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kurtuluş Kuyumculuk</title>
-  <!-- Tailwind CSS CDN -->
-  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
-  <!-- Remix Icons CDN (ikonlar için) -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
- 
-</head>
+
 <body class="bg-white min-h-screen">
 <header id="site-header" class="fixed w-full z-50 bg-transparent transition-all duration-500 ease-in-out">
-  <nav class="container max-w-screen-xl mx-auto px-4 py-6 flex justify-between items-center transition-all duration-500">
-    <div class="flex items-center">
-      <a href="#" class="font-['Pacifico'] text-4xl text-white font-semibold tracking-wide hover:text-secondary transition-colors duration-300">
-        Kurtuluş Kuyumculuk
-      </a>
+  <nav class="container max-w-screen-xl mx-auto px-4 py-2 flex justify-between items-center">
+    <!-- Logo -->
+<a href="#" class="block w-32 h-full overflow-visible relative" aria-label="Kurtuluş Kuyumculuk">
+      <img 
+        src="img/ChatGPT Image 26 May 2025 17_25_41.png" 
+        alt="Kurtuluş Kuyumculuk Logo" 
+        class="h-full w-auto transition-transform duration-300 ease-in-out hover:scale-125" 
+      />
+    </a>
+
+
+
+    <!-- Masaüstü Menü -->
+    <div class="hidden md:flex space-x-8 text-white font-cinzel text-sm md:text-base">
+      <a href="#about" class="nav-link hover:text-yellow-400 transition">Hakkımızda</a>
+      <a href="#services" class="nav-link hover:text-yellow-400 transition">Hizmetlerimiz</a>
+      <a href="#collections" class="nav-link hover:text-yellow-400 transition">Koleksiyonlarımız</a>
+      <a href="#contact" class="nav-link hover:text-yellow-400 transition">İletişim</a>
     </div>
-  <!-- Header linkleri -->
-<nav class="space-x-8">
-  <a href="#about" class="nav-link font-cinzel">Hakkımızda</a>
-  <a href="#services" class="nav-link font-cinzel">Hizmetlerimiz</a>
-  <a href="#collections" class="nav-link font-cinzel">Koleksiyonlarımız</a>
-  <a href="#contact" class="nav-link font-cinzel">İletişim</a>
-</nav>
 
-
-    <button class="md:hidden mobile-menu-button">
-      <i class="ri-menu-line text-3xl text-white transition-all duration-300"></i>
+    <!-- Hamburger Menü Butonu -->
+    <button class="md:hidden mobile-menu-button z-50">
+      <i class="ri-menu-line text-3xl text-yellow-400 transition-all duration-300"></i>
     </button>
   </nav>
-  <!-- Mobil Menü -->
-  <div class="mobile-menu md:hidden w-full hidden backdrop-blur bg-black/80">
-    <div class="px-4 py-4 space-y-2">
-      <a href="#about" class="block text-white text-lg font-medium hover:text-primary">Hakkımızda</a>
-      <a href="#services" class="block text-white text-lg font-medium hover:text-primary">Hizmetlerimiz</a>
-      <a href="#collections" class="block text-white text-lg font-medium hover:text-primary">Koleksiyonlarımız</a>
-      <a href="#contact" class="block text-white text-lg font-medium hover:text-primary">İletişim</a>
-    </div>
+
+  <!-- Mobil Menü (Tam Ekran) -->
+  <div class="mobile-menu fixed top-0 left-0 w-full h-screen bg-white text-yellow-800 origin-top scale-y-0 opacity-0 pointer-events-none transform transition-all duration-500 ease-in-out z-40 flex flex-col justify-center items-center space-y-6 text-xl font-semibold">
+    <!-- Kapatma Tuşu -->
+    <button class="close-menu-button absolute top-5 right-5 text-4xl text-yellow-600">
+      <i class="ri-close-line"></i>
+    </button>
+
+    <!-- Menü Linkleri -->
+    <a href="#about" class="hover:text-yellow-500 transition duration-300">Hakkımızda</a>
+    <a href="#services" class="hover:text-yellow-500 transition duration-300">Hizmetlerimiz</a>
+    <a href="#collections" class="hover:text-yellow-500 transition duration-300">Koleksiyonlarımız</a>
+    <a href="#contact" class="hover:text-yellow-500 transition duration-300">İletişim</a>
   </div>
 </header>
+
+
 
 <!-- HERO SECTION -->
 <main>
   <section class="hero-image h-screen relative flex items-center after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-r after:from-black/60 after:to-transparent">
     <div class="container max-w-screen-xl mx-auto px-4 relative z-10">
       <div class="max-w-2xl">
-        <h1 class="text-6xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-lg leading-tight">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-lg leading-snug sm:leading-tight">
           Altının Işıltısı,<br> Zarafetin Simgesi
         </h1>
-        <p class="text-2xl text-white/90 mb-12 drop-shadow-lg font-light">
+        <p class="text-lg sm:text-xl md:text-2xl text-white/90 mb-10 drop-shadow-lg font-light">
           Özel tasarımlarla yaşamınıza ışıltı katın
         </p>
-        <a href="#collections" class="bg-primary text-white px-10 py-4 rounded-button inline-flex items-center hover:bg-opacity-90 transition-all text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 duration-300">
-          Koleksiyonu Keşfedin
+        <a href="#collections" class="bg-primary text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-button inline-flex items-center hover:bg-opacity-90 transition-all text-base sm:text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 duration-300">
+          Servislerimizi Keşfedin
           <i class="ri-arrow-right-line ml-2"></i>
         </a>
       </div>
     </div>
   </section>
 </main>
+
     
     <section id="about" class="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div class="container max-w-screen-xl mx-auto px-4">
         <div class="grid md:grid-cols-2 gap-16 items-center" data-aos="fade-up">
           <div class="relative group h-full">
             <div class="absolute -inset-4 bg-primary/5 rounded-2xl transform rotate-3 transition-transform group-hover:rotate-6"></div>
-            <img src="img/indir (6).jpg"
+            <img src="img/ChatGPT Image 26 May 2025 17_49_07.png"
                  alt="About Us"
                  class="relative rounded-lg shadow-2xl transition-transform duration-500 group-hover:scale-105 w-full h-full object-cover">
           </div>
