@@ -15,6 +15,31 @@ background-position: center;
 .floating {
 animation: floating 3s ease-in-out infinite;
 }
+
+.nav-link {
+ font-family:monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #facc15; /* yellow-400 */
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
 @keyframes floating {
 0% { transform: translate(0,  0px); }
 50%  { transform: translate(0, 15px); }
@@ -43,4 +68,25 @@ animation: shine 3s infinite;
 @keyframes shine {
 0% {transform: translateX(-100%) rotate(45deg);}
 100% {transform: translateX(100%) rotate(45deg);}
+}
+
+
+
+.gold-glow {
+  background: linear-gradient(90deg, #d4af37, #fff8dc, #d4af37);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 3s linear infinite;
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.5), 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
 }

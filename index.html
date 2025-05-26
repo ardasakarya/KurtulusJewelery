@@ -12,6 +12,9 @@
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
 
 
 
@@ -29,53 +32,56 @@
  
 </head>
 <body class="bg-white min-h-screen">
-  <header class="fixed w-full bg-white/95 backdrop-blur z-50 shadow-md">
-    <nav class="container max-w-screen-xl mx-auto px-4 py-6 flex justify-between items-center">
-      <div class="flex items-center">
-        <a href="#" class="font-['Pacifico'] text-3xl text-primary hover:text-secondary transition-colors duration-300">
-         Kurtuluş Kuyumculuk
+<header id="site-header" class="fixed w-full z-50 bg-transparent transition-all duration-500 ease-in-out">
+  <nav class="container max-w-screen-xl mx-auto px-4 py-6 flex justify-between items-center transition-all duration-500">
+    <div class="flex items-center">
+      <a href="#" class="font-['Pacifico'] text-4xl text-white font-semibold tracking-wide hover:text-secondary transition-colors duration-300">
+        Kurtuluş Kuyumculuk
+      </a>
+    </div>
+  <!-- Header linkleri -->
+<nav class="space-x-8">
+  <a href="#about" class="nav-link font-cinzel">Hakkımızda</a>
+  <a href="#services" class="nav-link font-cinzel">Hizmetlerimiz</a>
+  <a href="#collections" class="nav-link font-cinzel">Koleksiyonlarımız</a>
+  <a href="#contact" class="nav-link font-cinzel">İletişim</a>
+</nav>
+
+
+    <button class="md:hidden mobile-menu-button">
+      <i class="ri-menu-line text-3xl text-white transition-all duration-300"></i>
+    </button>
+  </nav>
+  <!-- Mobil Menü -->
+  <div class="mobile-menu md:hidden w-full hidden backdrop-blur bg-black/80">
+    <div class="px-4 py-4 space-y-2">
+      <a href="#about" class="block text-white text-lg font-medium hover:text-primary">Hakkımızda</a>
+      <a href="#services" class="block text-white text-lg font-medium hover:text-primary">Hizmetlerimiz</a>
+      <a href="#collections" class="block text-white text-lg font-medium hover:text-primary">Koleksiyonlarımız</a>
+      <a href="#contact" class="block text-white text-lg font-medium hover:text-primary">İletişim</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<main>
+  <section class="hero-image h-screen relative flex items-center after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-r after:from-black/60 after:to-transparent">
+    <div class="container max-w-screen-xl mx-auto px-4 relative z-10">
+      <div class="max-w-2xl">
+        <h1 class="text-6xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-lg leading-tight">
+          Altının Işıltısı,<br> Zarafetin Simgesi
+        </h1>
+        <p class="text-2xl text-white/90 mb-12 drop-shadow-lg font-light">
+          Özel tasarımlarla yaşamınıza ışıltı katın
+        </p>
+        <a href="#collections" class="bg-primary text-white px-10 py-4 rounded-button inline-flex items-center hover:bg-opacity-90 transition-all text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 duration-300">
+          Koleksiyonu Keşfedin
+          <i class="ri-arrow-right-line ml-2"></i>
         </a>
       </div>
-      <div class="hidden md:flex items-center space-x-8">
-        <a href="#about" class="text-gray-700 hover:text-primary">Hakkımızda</a>
-        <a href="#services" class="text-gray-700 hover:text-primary">Hizmetlerimiz</a>
-        <a href="#collections" class="text-gray-700 hover:text-primary">Koleksiyonlarımız</a>
-        <a href="#contact" class="text-gray-700 hover:text-primary">İletişim</a>
-      </div>
-      <button class="md:hidden mobile-menu-button">
-        <i class="ri-menu-line text-2xl"></i>
-      </button>
-    </nav>
-    <!-- Mobil Menü Alanı -->
-    <div class="mobile-menu md:hidden w-full hidden">
-      <div class="px-4">
-        <div class="px-2 pt-2 pb-3 space-y-1 bg-white">
-          <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">Hakkımızda</a>
-          <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">Hizmetlerimiz</a>
-          <a href="#collections" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">Koleksiyonlarımız</a>
-          <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary">İletişim</a>
-        </div>
-      </div>
     </div>
-  </header>
-  
-  <main>
-    <section class="hero-image h-screen relative flex items-center after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-r after:from-black/50 after:to-transparent">
-      <div class="container max-w-screen-xl mx-auto px-4 relative z-10">
-        <div class="max-w-2xl">
-          <h1 class="text-6xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">
-            Altının Işıltısı, Zarafetin Simgesi<br>
-          </h1>
-          <p class="text-2xl text-white/90 mb-12 drop-shadow-lg font-light">
-            Özel tasarımlarla yaşamınıza ışıltı katın<br>
-          </p>
-          <a href="#collections" class="bg-primary text-white px-10 py-4 rounded-button inline-flex items-center hover:bg-opacity-90 transition-all text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 duration-300">
-            Koleksiyonu Keşfedin
-            <i class="ri-arrow-right-line ml-2"></i>
-          </a>
-        </div>
-      </div>
-    </section>
+  </section>
+</main>
     
     <section id="about" class="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div class="container max-w-screen-xl mx-auto px-4">
@@ -120,8 +126,8 @@
     <section id="services" class="py-20 bg-gradient-to-b from-white to-gray-50">
       <div class="container max-w-screen-xl mx-auto px-4">
         <div class="text-center mb-20" data-aos="fade-up">
-          <span class="text-primary text-sm font-semibold tracking-wider uppercase mb-2 inline-block">Our Expertise</span>
-          <h2 class="text-4xl font-bold mb-4">Hizmetlerimiz</h2>
+          
+          <h2 class="text-4xl font-bold mb-4">Biz Neler Yapıyoruz</h2>
           <div class="h-1 w-24 bg-primary rounded-full mx-auto"></div>
         </div>
     
@@ -205,71 +211,125 @@
       </div>
     </section>
     
-    <section id="collections" class="py-20 bg-gray-50 cursor-glow">
-      <div class="container max-w-screen-xl mx-auto px-4">
-        <div class="text-center mb-12" data-aos="fade-up">
-          <h2 class="text-4xl font-bold mb-2 shine-effect">Koleksiyonlarımız</h2>
-          <div class="h-1 w-24 bg-primary rounded-full mx-auto"></div>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servislerimiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<section id="collections" class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-2">Servislerimiz</h2>
+      <div class="h-1 w-24 bg-green-600 rounded-full mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- Kart Başlangıcı -->
+      <div class="aspect-square relative group overflow-hidden rounded-xl shadow-md">
+        <img src="img/mahbod-akhzami-GzkdcR2iMvw-unsplash.jpg" alt="Kolyeler" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 transform translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-1 gold-glow">Kolyeler</h3>
+
+          <p class="text-white text-sm">Modern üretim tekniklerinden biri olan 3D mum baskı, bilgisayar ortamında tasarlanan modellerin birebir mum versiyonunu oluşturur. Bu sayede karmaşık ve özel tasarımlar sorunsuz şekilde hayata geçirilir.</p>
         </div>
-        <div class="grid grid-cols-12 gap-4">
-          <div class="col-span-8 relative group overflow-hidden rounded-lg h-[400px] shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300" data-aos="fade-right">
-            <img src="img/mahbod-akhzami-GzkdcR2iMvw-unsplash.jpg" alt="Necklace" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span class="text-white text-xl font-bold">Kolyeler</span>
-            </div>
-          </div>
-          <div class="col-span-4 relative group overflow-hidden rounded-lg h-[400px]">
-            <img src="img/Meideya jewelry.jpg" alt="Ring" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span class="text-white text-xl font-bold">Yüzükler</span>
-            </div>
-          </div>
-          <div class="col-span-3 relative group overflow-hidden rounded-lg h-[250px]">
-            <img src="img/Jewelry Projects __ Photos, videos, logos, illustrations and branding.jpg" alt="Bracelet" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span class="text-white text-xl font-bold">Küpeler</span>
-            </div>
-          </div>
-          <div class="col-span-6 relative group overflow-hidden rounded-lg h-[250px]">
-            <img src="img/indir (4).jpg" alt="Earrings" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span class="text-white text-xl font-bold">Bilezikler</span>
-            </div>
-          </div>
-          <div class="col-span-3 relative group overflow-hidden rounded-lg h-[250px]">
-            <img src="img/Our Craftsmanship Journey.jpg" alt="Pendant" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span class="text-white text-xl font-bold">Takı Parlatma</span>
-            </div>
-          </div>
-          <div class="col-span-4 relative group overflow-hidden rounded-lg h-[300px]">
-            <img src="img/indir (10).jpg" alt="Special Collection" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span class="text-white text-xl font-bold"> Altın Döküm</span>
-            </div>
-          </div>
-          <div class="col-span-8 relative group overflow-hidden rounded-lg h-[300px]">
-            <img src="img/indir (7).jpg" alt="Chains" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span class="text-white text-xl font-bold">Zincirler</span>
-            </div>
-          </div>
-          <div class="col-span-6 relative group overflow-hidden rounded-lg h-[350px]">
-            <img src="img/indir (11).jpg" alt="Wedding Collection" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span class="text-white text-xl font-bold">Mum Ağacı</span>
-            </div>
-          </div>
-          <div class="col-span-6 relative group overflow-hidden rounded-lg h-[350px]">
-            <img src="img/brian-kairuz-oBZ-57helBA-unsplash.jpg" alt="Gemstone Collection" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span class="text-white text-xl font-bold">Takı Kaynak</span>
-            </div>
-          </div>
-        </div>
-     
       </div>
-    </section>
+
+      <!-- Kartlar 2-9 -->
+      <div class="aspect-square relative group overflow-hidden rounded-xl shadow-md">
+        <img src="img/indir (4).jpg" alt="Bileklikler" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 transform translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-1 gold-glow">Bilezikler</h3>
+          <p class="text-white text-sm">22 ayar altın bileziklerimiz hem günlük kullanıma uygun hem de özel davetler için şık bir tercihtir. İsteğe göre isim, desen ya da figür işlenebilir. Kişiye özel üretimle her bilezik eşsizdir.</p>
+        </div>
+      </div>
+
+      <div class="aspect-square relative group overflow-hidden rounded-xl shadow-md">
+        <img src="img/Meideya jewelry.jpg" alt="Yüzükler" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 transform translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-1 gold-glow">Yüzükler</h3>
+          <p class="text-white text-sm">Tarzınızı yansıtan 22 ayar altın yüzüklerimiz, minimal ya da gösterişli tasarımlarla size özel hazırlanır. Nişan, söz veya günlük kullanım için kişiselleştirilmiş seçenekler sunuyoruz.</p>
+        </div>
+      </div>
+
+      <div class="aspect-square relative group overflow-hidden rounded-xl shadow-md">
+        <img src="img/Jewelry Projects __ Photos, videos, logos, illustrations and branding.jpg" alt="Küpeler" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 transform translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-1 gold-glow">Küpeler</h3>
+          <p class="text-white text-sm">El yapımı 22 ayar altın küpelerimiz, sade veya taşlı modellerle tarzınızı tamamlar. Hafif ve konforlu yapısıyla her yaşa ve zevke hitap eder. Sipariş üzerine özgün tasarımlar yapılır.</p>
+        </div>
+      </div>
+
+      <div class="aspect-square relative group overflow-hidden rounded-xl shadow-md">
+        <img src="img/Studio Visit_ Daniel Baez from Taba Casting.jpg" alt="Saatler" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 transform translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-1 gold-glow">Mum Kalıp yapımı</h3>
+          <p class="text-white text-sm">Takı üretiminin ilk adımı olan mum kalıp yapımı, tasarımın birebir modelini ortaya çıkarır. Profesyonel ellerle hazırlanan bu kalıplar, altın dökümünde yüksek kalite ve detay sağlar..</p>
+        </div>
+      </div>
+
+      <div class="aspect-square relative group overflow-hidden rounded-xl shadow-md">
+        <img src="img/indir (7).jpg" alt="Gözlükler" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 transform translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-1 gold-glow">Zincirler</h3>
+          <p class="text-white text-sm">Şıklığın tamamlayıcısı olan altın zincirlerimiz 22 ayar altından üretilmekte olup, uzunluk ve model tercihi tamamen size özel belirlenmektedir. Her kullanım için uygun seçenekler mevcuttur.</p>
+        </div>
+      </div>
+
+      <div class="aspect-square relative group overflow-hidden rounded-xl shadow-md">
+        <img src="img/jewellery-casting-process-yellow-gold-tree.jpg" alt="Çantalar" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 transform translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-1 gold-glow">Altın Döküm</h3>
+          <p class="text-white text-sm">Hazırlanan mum kalıplar üzerinden yapılan altın dökümü, titizlikle ve ustalıkla gerçekleştirilir. 22 ayar altının saflığı korunarak, takıya dönüşüm süreci güvenle tamamlanır.</p>
+        </div>
+      </div>
+
+      <div class="aspect-square relative group overflow-hidden rounded-xl shadow-md">
+        <img src="img/waxtree-826012.jpg" alt="Atkılar" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 transform translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-1 gold-glow">Mum Ağacı</h3>
+          <p class="text-white text-sm">Birden fazla takı modelinin aynı anda dökümü için mum ağaçları oluşturulur. Bu işlem üretimi hızlandırır ve her parçanın eşit kalitede çıkmasını sağlar. Sistematik ve özenli bir süreçtir.</p>
+        </div>
+      </div>
+
+      <div class="aspect-square relative group overflow-hidden rounded-xl shadow-md">
+        <img src="img/jewellery-3d-printer-for-wax-moulds-500x500.webp" alt="Şapkalar" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-4 transform translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-1 gold-glow">3D Mum Model Basımı</h3>
+          <p class="text-white text-sm">Modern üretim tekniklerinden biri olan 3D mum baskı, bilgisayar ortamında tasarlanan modellerin birebir mum versiyonunu oluşturur. Bu sayede karmaşık ve özel tasarımlar sorunsuz şekilde hayata geçirilir.</p>
+        </div>
+      </div>
+      <!-- Kart Bitişi -->
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+    
+
     
     <section id="contact" class="py-20 bg-white w-full">
       <div class="text-center mb-12">

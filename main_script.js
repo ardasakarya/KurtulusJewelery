@@ -1,3 +1,25 @@
+
+const header = document.getElementById("site-header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    header.classList.add("bg-white/95", "shadow-lg", "backdrop-blur");
+    header.classList.remove("bg-transparent");
+    header.querySelectorAll("a, i").forEach(el => {
+      el.classList.remove("text-white", "text-white/90", "hover:text-white");
+      el.classList.add("text-gray-800", "hover:text-yellow-500"); // İstersen hover sarı olsun
+    });
+  } else {
+    header.classList.remove("bg-white/95", "shadow-lg", "backdrop-blur");
+    header.classList.add("bg-transparent");
+    header.querySelectorAll("a, i").forEach(el => {
+      el.classList.remove("text-gray-800", "hover:text-yellow-500");
+      el.classList.add("text-white", "hover:text-yellow-400");
+    });
+  }
+});
+
+
 tailwind.config = {
     theme: {
     extend: {
