@@ -3,6 +3,9 @@
 .mobile-menu {
 display: none;
 }
+html, body {
+  overflow-x: hidden;
+}
 
  @media not all and (min-resolution:.001dpcm) {
     @supports (-webkit-appearance:none) {
